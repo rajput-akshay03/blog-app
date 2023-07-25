@@ -1,1 +1,10 @@
-
+.header{
+  display: flex;
+  font-size: x-large;
+  border: 2px solide red;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  height: 10vh;
+  align-items: center;
+}
