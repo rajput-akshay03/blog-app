@@ -10,7 +10,7 @@ function App() {
          <header className='header'>Tech Blogs</header>
          <div>
           {
-            loading?(<Spinner/>):()
+            loading?(<Spinner/>):();
           }
          </div>
     </div>
