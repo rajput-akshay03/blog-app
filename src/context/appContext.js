@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 export const appcontext = createContext();
-export function Context({children}){
+export function Contexting({children}){
     const [loading,setloading] = useState(false);
     const [posts,setposts] = useState([]);  
     const [page,setpage] = useState(1);
@@ -15,7 +15,7 @@ export function Context({children}){
                 const data = await result.json();
                 setpage(data.page);
                 setposts(data.posts);
-                settotalpages(data.totalpages);
+                settotalpages(data.totalPages);
         }
         catch(err)
         {
@@ -42,7 +42,9 @@ export function Context({children}){
         page,
         setpage,
         totalpages,
-        settotalpages
+        settotalpages,
+        fetchblogs,
+        pagechange
     }
     return <appcontext.Provider value={value}>{children}</appcontext.Provider>
 }

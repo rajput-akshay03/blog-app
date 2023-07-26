@@ -1,4 +1,15 @@
+.App{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.main{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
 .header{
+
   display: flex;
   font-size: x-large;
   border: 2px solide red;
@@ -7,4 +18,82 @@
   justify-content: center;
   height: 10vh;
   align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+}
+.custom-loader {
+  --d:22px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  position: fixed;
+ left: 50%;
+ top: 50%;
+  color: #766DF4;
+  box-shadow: 
+    calc(1*var(--d))      calc(0*var(--d))     0 0,
+    calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+    calc(0*var(--d))      calc(1*var(--d))     0 2px,
+    calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+    calc(-1*var(--d))     calc(0*var(--d))     0 4px,
+    calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+    calc(0*var(--d))      calc(-1*var(--d))    0 6px;
+  animation: s7 1s infinite steps(8);
+}
+
+@keyframes s7 {
+  100% {transform: rotate(1turn)}
+}
+.title{
+  color: brown;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+}
+.author{
+  display: flex;
+  justify-content: center;
+}
+.tags{
+  display: flex;
+  color: blue;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 2vh;
+}
+.content{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  
+}
+.footer {
+ border: 1px solid white;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+}
+.buttons{
+  border: 1px solid;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
+  color:  black;
+
 }
